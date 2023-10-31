@@ -1,0 +1,309 @@
+body{
+  /* background-image: url('./assets/large-triangles.svg'); */
+  background: linear-gradient(180deg, #1834CE 0%, #2BAAA1 100%);
+  background-attachment: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+#root{
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav{
+  position:fixed;
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  justify-content: space-between;
+  padding: 0 ;
+  top: 0px;
+  z-index: 1000;
+}
+
+#navbarcont.navbar-container{
+  width: 100%;
+  display: contents;
+}
+
+
+.navbar{
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  background-color:#3e52c2;
+  height: 36px;
+}
+
+.navbar-left{
+  display: flex;
+}
+.navbar-left ul li ,
+.navbar-right ul li {
+  text-decoration: none;
+  color: whitesmoke;
+  margin-inline: 12px;
+  padding: 0px;
+  height: 24px;
+  align-items: center;
+}
+.navbar-left ul li :hover,
+.navbar-right ul li :hover{
+  color: plum;
+  cursor: pointer;
+}
+.menu{
+  display: none;
+}
+.navbar-left ul,
+.navbar-right ul{
+  list-style: none;
+  padding:0px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+}
+.navbar-left ul{
+  margin-right: 50px;
+}
+
+.navbar-left ul:hover{
+  cursor: pointer;
+}
+
+.navbar-right{
+  margin-right: 50px;
+}
+
+.navbar-right ul:hover{
+  cursor: pointer;
+}
+
+.getInTouch{
+  font-weight: bold;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  height:100%;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+.description{
+  width: 500px;
+  align-items: center;
+}
+.title{
+  color: antiquewhite;
+  font-size: 72px;
+  margin-bottom:12px ;
+}
+
+.slogan{
+  color: antiquewhite;
+  font-size: 32px;
+  margin-top: 2px;
+  border-bottom: 1px solid antiquewhite;
+}
+
+.description-one{
+  color: aliceblue;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(240, 248, 255);
+  border-radius: 30px;
+  width: 27.75rem;
+  height: 29.93rem;
+  align-items: center;
+  padding: 18px;
+}
+
+.name{
+  font-size: 48px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #1F1F23;
+}
+
+p.enter{
+  font-size: 32px;
+  margin-top: 0px;
+  color: #1F1F23;
+}
+
+.username{
+  width:396px;
+  font-size: 20px;
+  height: 32px;
+  padding: 12px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+}
+
+.password{
+  width:396px;
+  font-size: 20px;
+  margin-top: 4px;
+  padding: 12px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+.login-user{
+  margin:18px;
+  justify-content: center;
+}
+
+.forgot-pass{
+  justify-content: center;
+  align-content: center;
+  margin-top: 12px;
+  
+}
+
+.forgotPassword{
+  font-size: 16px;
+  text-decoration: underline;
+  color: #1834CE;
+  margin-top: 0;
+}
+
+.sign-in{
+  width: 404px;
+  height: 48px;
+  font-size: 30px;
+  font-weight: bold;
+  color: aliceblue;
+  background-color: #1834CE;
+  border-radius: 15px;
+  border-style: none;
+}
+
+.sign-in:hover{
+  cursor: pointer;
+  border: 2px  #9fa6f4 solid;
+}
+
+.sign-in:active{
+  background-color: #9fa6f4;
+  transition: 0.2s ease;
+}
+
+.end-container{
+  background-color: white;
+  margin-top: 36px;
+  padding: 24px;
+}
+
+.collaborators-title{
+  font-size: 36px;
+  padding: 0;
+  margin: 0;
+  border-bottom: 3px #1834CE solid;
+  width: fit-content;
+}
+
+.collaborators-container{
+  display: flex;
+  margin-top: 24px;
+  justify-content: space-around;
+}
+
+.collaborators:hover{
+  scale: 1.3;
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  background-color:#3e52c2;
+  color: antiquewhite;
+}
+
+.principal-footer{
+  width: auto;
+  text-align: center;
+  
+}
+
+.aquanet-footer{
+  margin-top: 12px;
+  margin-bottom: 0px;
+  font-weight: 100;
+}
+
+.aquanet-generation{
+  margin-block: 0;
+  font-weight: 100;
+}
+
+.year{
+  margin-block: 0;
+  font-weight: 100;
+}
+
+.team{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0;
+  height: fit-content;
+}
+
+.team-int{
+  margin-inline: 12px;
+  margin-block: 6px;
+  text-align: center;
+  font-weight: 100;
+}
+
+@media (max-width:640px){
+    .root{
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    }
+
+    .container{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .description{
+      height: 600px;
+    }
+  
+    .end-container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .collaborators-container{
+      flex-direction: column;
+    }
+
+  
+
+    .collaborators:hover{
+      cursor: pointer;
+      scale: none;
+      transition: none;
+    }
+
+    .collaborators{
+      margin-block:12px;
+      transform: scale(0.75);
+    }
+
+}
+
+
+
