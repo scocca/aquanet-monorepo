@@ -1,15 +1,18 @@
-
 import './App.css'
-import { Login } from './layouts/Login'
+import { BrowserRouter, Route} from 'react-router-dom';
+import Login from '../layouts/Login';
+import Profile from '../layouts/Profile';
+
 
 function App() {
 
-
   return (
-    <>
-      <Login/>
-    </>
+    <BrowserRouter>
+
+        <Route path="/" exact component={Login} />
+        <Route path="/Profile" component={Profile} />
+    </BrowserRouter>
   )
 }
 
-export default App
+export {App}
