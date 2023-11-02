@@ -7,6 +7,8 @@ import { NavBar } from '../components/NavBar';
 import PhotoLogo from '../components/PhotoLogo';
 import ParagraphHeader from '../components/ParagraphHeader';
 import Maps from '../components/Maps';
+import PhotoBlog from '../components/PhotoBlog';
+import NewsInfo from '../components/NewsInfo';
 
 const Blog = () => {
   return (
@@ -23,9 +25,11 @@ const Blog = () => {
         </section>
         <section className="blog-news-section">
             <div className="blog-container">
-
+                <PhotoBlog/>
+                <NewsInfo/>
             </div>
         </section>
+        
     </main>
     </>
   )
