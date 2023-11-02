@@ -1,6 +1,7 @@
 import {createBrowserRouter} from 'react-router-dom'
 import { Login } from '../layouts/Login'
 import { Profile } from '../layouts/Profile'
+import Blog from '../layouts/Blog'
 
 const routes = createBrowserRouter([
   {
@@ -11,6 +12,10 @@ const routes = createBrowserRouter([
     path:"/Profile",
     element: <Profile/>,
   },
+  {
+    path:"/Blog",
+    element:<Blog/>
+  }
 ])
 
 export {routes}
