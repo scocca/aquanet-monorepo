@@ -6,6 +6,7 @@ body{
 .blog{
     background-color: aliceblue;
     color:black;
+
 }
 
 .blog-header{
@@ -20,10 +21,12 @@ body{
     margin:0;
 }
 
-.blog-container{
+.user-blog-container{
     display: flex;
     height: 19.2rem;
     justify-content: center;
+    width: 100vw;
+    background-color: #FFF;
 }
 
 .photo-logo-img{

@@ -11,17 +11,21 @@ import Maps from '../components/Maps';
 const Blog = () => {
   return (
     <>
-    
     <main className="blog">
         <NavBar/>
-        <header className="blog-header">
+        <section className="blog-header">
             <FrontPhoto photo={PhotoCord}/>
-        <div className="blog-container">
+        <div className="user-blog-container">
             <PhotoLogo/>
             <ParagraphHeader/>
             <Maps/>
         </div>
-        </header>
+        </section>
+        <section className="blog-news-section">
+            <div className="blog-container">
+
+            </div>
+        </section>
     </main>
     </>
   )
