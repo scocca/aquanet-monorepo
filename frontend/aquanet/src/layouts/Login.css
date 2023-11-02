@@ -100,14 +100,30 @@ nav{
   margin-top: 50px;
   justify-content: space-around;
 }
+
 .description{
   width: 500px;
   align-items: center;
+  border: 2px solid aliceblue;
+  padding: 24px;
+  margin-top: 2rem;
+  height: fit-content
 }
+
 .title{
   color: antiquewhite;
-  font-size: 72px;
-  margin-bottom:12px ;
+  font-size: 4.5rem;
+  line-height: 4rem;
+  margin: 0;
+}
+
+.title-2{
+  color: antiquewhite;
+  font-size: 4.5rem;
+  line-height: 4rem;
+  margin-left: 6.5rem;
+  margin-bottom: 12px;
+  margin: 0 0 0 6.5rem;
 }
 
 .slogan{
