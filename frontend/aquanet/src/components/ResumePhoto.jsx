@@ -1,7 +1,9 @@
 const ResumePhoto=({url})=>{
     return(
         <>
-            <img src={url} alt=''/>
+        <div className="blog-photo-container">
+            <img className="blog-photo" src={url} alt=''/>
+        </div>
         </>
     )
 }

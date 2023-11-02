@@ -1,17 +1,19 @@
-const GetInTouch = ({mail, telephone, web})=>{
+
+
+const GetInTouch = ({mail, telephone, web, mailIcon, telIcon, webIcon})=>{
     return (
         <div className="inTouch-container">
             <div className="inTouch-data-container">
-                <span className="icon">mail</span>
-                <p className='inTouch-data'>{mail}</p>
+                <img className='icons' src={mailIcon} alt='mail'/>
+                <p className='inTouch-data'>mail: {mail}</p>
             </div>
             <div className="inTouch-data-container">
-                <span className="icon">telephone</span>
-                <p className='inTouch-data'>{telephone}</p>
+                < img className='icons' src={telIcon} alt='telephone'/>
+                <p className='inTouch-data'>telephone: {telephone}</p>
             </div>
             <div className="inTouch-data-container">
-                <span className="icon">web</span>
-                <p className='inTouch-data'>{web}</p>
+                < img className='icons' src={webIcon} alt='web site'/>
+                <p className='inTouch-data'>web: {web}</p>
             </div>
         </div>
     )

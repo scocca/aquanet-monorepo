@@ -17,6 +17,12 @@ import { ResumePhoto } from "../components/ResumePhoto";
 import { BlogParagraph } from "../components/BlogParagraph";
 import PhotoCord from '../assets/Images/foto_cordillera.png';
 import Portrait from '../assets/Images/image 30.png'
+import mailIcon from '../assets/Icons/mail_FILL0_wght400_GRAD0_opsz24 1.png'
+import telIcon from '../assets/Icons/call_FILL0_wght400_GRAD0_opsz24 1.png'
+import webIcon from '../assets/Icons/public_FILL0_wght400_GRAD0_opsz24 1.svg'
+import settingIcon from '../assets/Icons/settings_FILL0_wght400_GRAD0_opsz24 1.png'
+
+import bigImage from '../assets/Images/Rectangle 14474.png'
 
 const Profile =()=>{
     return (
@@ -27,8 +33,8 @@ const Profile =()=>{
                 <FrontPhoto photo={PhotoCord}/>
                 <div className="profile-container-info">
                 <RoundPhoto photo={Portrait}/>
-                <ProfileParagraph userName={'Cooperativa agua portable cumpeo'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}/>
-                <GetInTouch/>
+                <ProfileParagraph userName={'Cooperativa agua portable cumpeo'} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'} settingIcon={settingIcon}/>
+                <GetInTouch mail={'asdasd@asdas.com'} telephone={'+1212121212'} web={'coopcump.com'} mailIcon={mailIcon} telIcon={telIcon} webIcon={webIcon}/>
                 </div>
             </section>
             <section className="cards-info">
@@ -39,14 +45,14 @@ const Profile =()=>{
                 </div>
                 <ConnectBtn/>
             </section>
-            <section className="Blog">
+            <section className="blog">
                 <BlogTitle/>
                 <div className="blog-container">
                 {BlogData.map((blog)=>(   
-                    <ResumePhoto key='' url={blog.img}/>
+                    <ResumePhoto key='' url={bigImage}/>
                     ))}
                 {BlogData.map((blog)=>(   
-                    <BlogParagraph key='' title={blog.title} paragraph={blog.paragraph}/>
+                    <BlogParagraph key='' subtitle={blog.title} paragraph={blog.paragraph}/>
                     ))}
                 </div>
             </section>

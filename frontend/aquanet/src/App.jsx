@@ -8,7 +8,6 @@ function App() {
 
   return (
     <BrowserRouter>
-
         <Route path="/" exact component={Login} />
         <Route path="/Profile" component={Profile} />
     </BrowserRouter>
