@@ -124,6 +124,7 @@ body{
     align-items: center;
     color: #FFF;
     background-color: #1832C8;
+    font-size: 2rem;
 }
 
 .connect-btn:active{
