@@ -1,17 +1,31 @@
-
-import './Login.css';
-
-import { Home } from '../components/home'
-import { Footer } from '../components/footer';
+import React from "react";
+import '../layouts/Registro.css'
 
 
 const Registro =() =>{
-    return(
-    <div className="Home">
-      <Home/>
-      <Footer/>
-    </div>
-    )
-  }
 
-  export {Registro}
+  return (
+    <div className="pag">
+    <div className="titulo">
+    <h1>Registro</h1>
+    <form>
+      Nombre de usuario:
+      <input type="text" />
+      Contraseña:
+      <input type="text" />
+      Mail:
+      <input type="text" />
+      Soy:
+      <select>
+          <option>Persona</option>
+          <option>Empresa</option>
+          <option>ONG</option>
+      </select>
+      <button>Registrar</button>
+    </form>
+    </div>
+  </div>
+  )
+}
+
+export {Registro};

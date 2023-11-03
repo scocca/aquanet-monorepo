@@ -1,0 +1,42 @@
+.titulo{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top:5.25rem;
+    padding-bottom: 45.44rem;
+    justify-content: center;
+    align-items: center;
+
+}
+form{
+    display: flex;
+    flex-direction:column ;
+    background-color: white;
+    color: #1F1F23;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    padding-top:2.75rem;
+    padding-bottom: 5rem;
+    padding-left: 3.62rem;
+    padding-right: 3.62rem;
+    width: 27.75rem;
+    height: 33.875rem;
+    border-radius: 1.875rem;
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    border-radius: 0.9375rem;
+    background-color: white;
+}
+select{
+    background-color: white;
+    border-radius: 0.9375rem;
+    padding-top: 10px;
+
+}
+button{
+    margin-top: 60px;
+    background-color: #1832C8;;
+}
