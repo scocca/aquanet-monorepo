@@ -13,7 +13,7 @@ const routes = createBrowserRouter([
     element: <Profile/>,
   },
   {
-    path:"/Blog",
+    path:"/blog",
     element:<Blog/>
   }
 ])

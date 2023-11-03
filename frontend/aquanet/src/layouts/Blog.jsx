@@ -1,4 +1,4 @@
-import '../App.css'
+import '../Login.css'
 import './Blog.css'
 import React from 'react'
 import { FrontPhoto } from '../components/front-photo'

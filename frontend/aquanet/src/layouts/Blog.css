@@ -6,11 +6,18 @@ body{
 .blog{
     background-color: aliceblue;
     color:black;
-
 }
 
 .blog-header{
     background-color: white;
+}
+/* se baja el tamaño de la imagen */
+.blog-photo{
+    height: 23.5rem;
+}
+
+.maps{
+    transform: scale(0.8);
 }
 
 .front-photo-img{
@@ -64,8 +71,9 @@ body{
 .links-container{
     background-color: #1832c83f;
     padding:1rem;
-    border-radius: 0 0 25px 25px;
-    height: 50rem;
+    /* border-radius: 0 0 25px 25px; interpretacion de figma, width adjusted */
+    height: 40rem;
+    width: 100vw;
     margin-top: 5rem;
     padding-top: 5rem;
 }
@@ -98,7 +106,7 @@ body{
     color:#1832C8;
     background-color: aliceblue;
     margin-block: 1rem;
-    margin-inline: 2rem;
+    margin-inline: 3rem;
     padding-left: 1rem;
     position: relative;  
 }
@@ -118,7 +126,7 @@ body{
     border-bottom: 0.25rem solid #1832C8;
     color: #1F1F23;
     text-align: center;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     font-size: 2.25rem;
     font-style: normal;
     font-weight: 600;
