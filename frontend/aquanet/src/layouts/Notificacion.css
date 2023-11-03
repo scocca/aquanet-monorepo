@@ -12,6 +12,18 @@ background-color: #1832c821;
 
 
 }
+.user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+   }
+   
+   .user-name {
+    color: white;
+    margin: 0;
+   }
 
 .navbar button {
  border: black;
@@ -22,7 +34,7 @@ background-color: #1832c821;
 
 }
 
-aside {
+.aside {
     background-color: #f8f9fa;
     border-color: #1832c8;
     padding: 20px;
@@ -39,17 +51,21 @@ aside {
     margin-bottom: 10px;
     cursor: pointer;
     font-size: 14px;
+    display: block;
     
 }
-
-
-
-
-
-
-
-
-
+.main.button {
+    border-color: #1832c8;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    
+   }
 
 .footer {
     background-color: #1832c8;

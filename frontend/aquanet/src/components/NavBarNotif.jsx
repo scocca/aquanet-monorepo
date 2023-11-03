@@ -10,6 +10,12 @@ const NavBarNotif = () => {
        <nav className="navbar">
          <div className="container">
            <form className="d-flex">
+           <img
+          className="user-image"
+          src="https://4.bp.blogspot.com/-sKHAkR4l6Fo/TmGycBQ_EgI/AAAAAAAAN2E/tU1ZK2yqlFU/s1600/Lindos-Perritos_07.jpg"
+          alt="Fulanito"
+        />
+        <p className="user-name">Fulanito</p>
              <input
                className="NavBarunu"
                type="search"
