@@ -1,0 +1,58 @@
+body{
+background-color: #1832c821;
+
+}
+
+.navbar{
+    background-color: #1832c8;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    text-align:end;
+
+
+}
+
+.navbar button {
+ border: black;
+ background-color: white;
+ color: white;
+ padding: 20px;
+ cursor: pointer;
+
+}
+
+aside {
+    background-color: #f8f9fa;
+    border-color: #1832c8;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.aside button {
+    background-color: white;
+    color: white;
+    border-color: #1832c8;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #1832c8;
+    padding: 20px;
+    text-align: right;
+   }
