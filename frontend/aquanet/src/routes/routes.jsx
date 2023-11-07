@@ -2,6 +2,7 @@ import {createBrowserRouter} from 'react-router-dom'
 import { Login } from '../layouts/Login'
 import { Profile } from '../layouts/Profile'
 import Blog from '../layouts/Blog'
+import { ConfirmacionRegistro } from '../layouts/ConfirmacionRegistro'
 
 const routes = createBrowserRouter([
   {
@@ -14,8 +15,12 @@ const routes = createBrowserRouter([
   },
   {
     path:"/blog",
-    element:<Blog/>
-  }
+    element: <Blog/>,
+  },
+  {
+    path:"/ConReg",
+    element: <ConfirmacionRegistro/>,
+  },
 ])
 
 export {routes}
