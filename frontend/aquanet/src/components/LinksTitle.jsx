@@ -8,5 +8,5 @@ function LinksTitle() {
   )
 }
 
-export default LinksTitle
+export {LinksTitle}
 

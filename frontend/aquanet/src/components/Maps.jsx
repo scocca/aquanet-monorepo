@@ -9,4 +9,4 @@ const Maps = () => {
   )
 }
 
-export default Maps
+export {Maps}

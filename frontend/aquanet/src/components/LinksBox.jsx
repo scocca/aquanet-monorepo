@@ -43,4 +43,4 @@ const LinksBox = () => {
   )
 }
 
-export default LinksBox
+export {LinksBox}

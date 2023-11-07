@@ -10,4 +10,4 @@ const PhotoBlog = () => {
   )
 }
 
-export default PhotoBlog
+export {PhotoBlog}

@@ -9,4 +9,4 @@ const PhotoLogo = () => {
   )
 }
 
-export default PhotoLogo;
+export { PhotoLogo }

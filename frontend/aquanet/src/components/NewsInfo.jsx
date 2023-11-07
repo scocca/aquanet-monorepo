@@ -9,4 +9,4 @@ const NewsInfo = () => {
   )
 }
 
-export default NewsInfo
+export{NewsInfo}
