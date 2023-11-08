@@ -16,7 +16,7 @@ function Notificaciones() {
         <button Onclick>Me gustas</button>
         <button Onclick>Grupos</button>
     </AsideNotif>
-    <Main>
+    <Main className= "container">
         <button1/> 
         <button2/>
         <button3/>

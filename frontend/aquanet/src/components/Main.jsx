@@ -24,21 +24,21 @@ function Main () {
               <img src="https://flyclipart.com/thumb2/carta-icon-png-png-image-604218.png" alt="Carta" />
             </div>
             </div>
-            <div className="navbar-text">
-              <h4>Fulanito respondió a tu post:</h4>
+            <div className="navbar-text1">
+              <h1>Fulanito respondió a tu post:</h1>
               <p>xxxxxxxxxxxxxxxxxxxxxx</p>
               <p>"Hace x minutos"</p>
             </div>
           </button1>
           <button2>
-            <div className="navbar-text">
-              <h4>Fulanito le dio me gusta a tu post"xxxxxxx":</h4>
+            <div className="navbar-text2">
+              <h2>Fulanito le dio me gusta a tu post"xxxxxxx": </h2>
               <p>"Hace x minutos"</p>
             </div>
           </button2>
           <button3>
-            <div className="navbar-text">
-              <h4>Fulanito te siguió</h4>
+            <div className="navbar-text3">
+              <h3>Fulanito te siguió</h3>
               <p>"Hace x minutos"</p>
             </div>
           </button3> 

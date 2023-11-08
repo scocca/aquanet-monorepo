@@ -1,5 +1,7 @@
 body{
-background-color: #1832c821;
+background-color: #9fa6f4;
+overflow-y: scroll; 
+scroll-behavior: smooth;
 
 }
 
@@ -7,8 +9,8 @@ background-color: #1832c821;
     background-color: #1832c8;
     position: sticky;
     top: 0;
-    padding: 20px;
     text-align:end;
+    width:100%;
 
 
 }
@@ -21,43 +23,53 @@ background-color: #1832c821;
    }
    
    .user-name {
-    color: white;
+    color:aliceblue;
     margin: 0;
    }
 
 .navbar button {
  border: black;
- background-color: white;
- color: white;
- padding: 20px;
+ background-color: aliceblue;
+ color: aliceblue;
+ margin: 5px;
  cursor: pointer;
 
 }
 
 .aside {
-    background-color: #f8f9fa;
+    background-color: aliceblue;
     border-color: #1832c8;
+    position: sticky;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 
 .aside button {
-    background-color: white;
+    background-color: aliceblue;
     color: white;
     border-color: #1832c8;
-    padding: 10px 20px;
-    margin-bottom: 10px;
+    
+    
     cursor: pointer;
     font-size: 14px;
     display: block;
     
 }
-.main.button {
+
+.main { 
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+}
+
+.main.button1 {
     border-color: #1832c8;
     border-radius: 5px;
-    color: white;
+    color: aliceblue;
     cursor: pointer;
     font-size: 16px;
     padding: 10px 20px;
@@ -65,6 +77,37 @@ background-color: #1832c821;
     display: inline-block;
     margin: 4px 2px;
     
+   }
+
+   .main.button2 {
+    border-color: #1832c8;
+    border-radius: 5px;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+
+   }
+
+   .main.button3 {
+    border-color: #1832c8;
+    border-radius: 5px;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+   }
+
+   .main.button-text{
+    justify-content: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
    }
 
 .footer {
