@@ -1,3 +1,4 @@
+
 function NavBar(){
     return(
         <nav>
@@ -9,7 +10,7 @@ function NavBar(){
           </div>
           <div className='navbar-left'>
             <ul className='left-list'>
-              <li className='list'><a href="/main-profile"> ONG's</a></li>
+              <li className='list'>ONG's</li>
               <li className='list'>Empresas</li>
               <li className='list'>Personas</li>
               <li className='list'>Blog</li>
