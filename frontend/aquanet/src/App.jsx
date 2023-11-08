@@ -11,7 +11,11 @@ function App() {
     <BrowserRouter>
         <Route path="/" exact component={Login} />
         <Route path="/Profile" component={Profile} />
+<<<<<<< HEAD
         <Route path= "/Registro" component={Registro} />
+=======
+        <Route path="/ConReg" component={ConfirmacionRegistro} />
+>>>>>>> samuel
     </BrowserRouter>
   )
 }
