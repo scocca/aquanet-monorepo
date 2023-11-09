@@ -1,50 +1,29 @@
 
-import React, { useState } from 'react';
-function Main () {
-    
-    
-    const Main = () => {
-     const [clickedCount, setClickedCount] = useState(0);
-    
-     const handleButtonClick = () => {
-        setClickedCount(clickedCount + 1);
-     };
-    
-     const opacity = 1 - clickedCount * 0.1;
-    
-     return (
-        <div className="botonNotif">
-          <button1
-            className="botonnotif"
-            style={{ backgroundColor: `rgba(0, 0, 255, ${opacity})` }}
-            onClick={handleButtonClick}>
-            <div className="navbar-icon-left">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Coraz%C3%B3n.svg/1121px-Coraz%C3%B3n.svg.png" alt="Corazón" />
-              <div className="navbar-icon-right">
-              <img src="https://flyclipart.com/thumb2/carta-icon-png-png-image-604218.png" alt="Carta" />
-            </div>
-            </div>
-            <div className="navbar-text1">
-              <h1>Fulanito respondió a tu post:</h1>
-              <p>xxxxxxxxxxxxxxxxxxxxxx</p>
-              <p>"Hace x minutos"</p>
-            </div>
-          </button1>
-          <button2>
-            <div className="navbar-text2">
-              <h2>Fulanito le dio me gusta a tu post"xxxxxxx": </h2>
-              <p>"Hace x minutos"</p>
-            </div>
-          </button2>
-          <button3>
-            <div className="navbar-text3">
-              <h3>Fulanito te siguió</h3>
-              <p>"Hace x minutos"</p>
-            </div>
-          </button3> 
-        </div>
-     );
-    };
+import React from 'react';
+import ListItem from './components/ListItem';
+import Card from './components/Card';
+import './App.css';
+
+function App(){
+
+const jsonData =[
+  { 
+    id:1,
+   image:"https://scontent.fscl9-2.fna.fbcdn.net/v/t39.30808-6/309398064_463643089123110_6628263177696762377_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFXy8w3585dz4wCyaipYN2GfBez2L5NPi98F7PYvk0-L1euhRqG1wuegJwAgJn1JwRD-_QB43RFxgzEQnT1Y240&_nc_ohc=tNZQWAQOCTAAX9zctI6&_nc_ht=scontent.fscl9-2.fna&oh=00_AfC_vMGH3b0IWPCQ0FLctYty-H5OlyU2If_Gh8Mmn0wuUQ&oe=65524A7D",
+   title:"ONG GAIA comentó en tu post: ",
+   text:"En el Comité Creativo de nuestra ONG, trabajamos en un proyecto especial con envases plásticos. Recolectamos envases y los convertimos en maceteros. ¡La creatividad no tiene límites! 👏[...]"},
+  {
+    id:2,
+  image:"https://tse2.mm.bing.net/th?id=OIP.CjJXuzT1vxUJmPnFXL654gHaGD&pid=Api",
+   title:"Carla le dio me gusta a tu post: ",
+  text:"Preparamos nuestro espacio para un conversatorio sobre temas medioambientales con profesores, resaltando la importancia de la educación para el cambio. 📚🌍.[...]"
+ },
+  {
+    id:3,
+  image:"https://scontent.fscl9-1.fna.fbcdn.net/v/t39.30808-6/385048256_297387226416857_4402622667066493035_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF_no1Qxa4KUwO61bGZmhtz8acB85x-TQvxpwHznH5NCwCfcRRwMw60yFYoDPHTYwJlWyr28PvSZnnw9jRPJo62&_nc_ohc=KP4ZEPEIb_wAX8VZJLo&_nc_ht=scontent.fscl9-1.fna&oh=00_AfCGQmneyAwp11qg9u2YRaVeLft7hP5l0Yi_KQ9hQvbaow&oe=6551D33D",
+  title:"ONG Cuida tu Agua Chile te siguió"}
+
+]
 
 }
-export {Main}
+export default App;

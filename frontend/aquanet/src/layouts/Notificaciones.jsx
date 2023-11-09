@@ -1,25 +1,20 @@
-import React from 'react';
-import { Notificacion } from '../layouts/Notificacion.css';
+import './Notificacion.css';
 import { NavBarNotif } from '../components/NavBarNotif';
 import { FooterNotif } from '../components/FooterNotif';
 import { AsideNotif } from '../components/AsideNotif';
 import { Main } from '../components/Main';
+import { CardNotif } from '../components/CardNotif';
+import { ListItem } from '..components/ListItem';
+
 
 function Notificaciones() {
  return (
-    <div className="Notifica">
-      <NavBarNotif/>
-      <AsideNotif>
-        <button Onclick>A mi</button>
-        <button Onclick>Favoritos</button>
-        <button Onclick>Respuestas</button>
-        <button Onclick>Me gustas</button>
-        <button Onclick>Grupos</button>
-    </AsideNotif>
-    <Main className= "container">
-        <button1/> 
-        <button2/>
-        <button3/>
+    <div className="notifications-container">
+      <NavBarNotif/> 
+      <AsideNotif/>
+    <Main>
+        <CardNotif/>
+        <ListItem/>
     </Main>
       <FooterNotif />
     </div>

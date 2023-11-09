@@ -1,117 +1,124 @@
-body{
-background-color: #9fa6f4;
-overflow-y: scroll; 
-scroll-behavior: smooth;
-
+.notifications-container{
+  display: flex;
+  width: 50vw;
+  height: 50vh;
+  background-color: aliceblue;
+  position:absolute;
+  right: 0;
+  top:0;
+  
 }
 
-.navbar{
-    background-color: #1832c8;
-    position: sticky;
-    top: 0;
-    text-align:end;
-    width:100%;
-
-
-}
-.user-image {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
-   }
-   
-   .user-name {
-    color:aliceblue;
-    margin: 0;
-   }
-
-.navbar button {
- border: black;
- background-color: aliceblue;
- color: aliceblue;
- margin: 5px;
- cursor: pointer;
-
+.d-flex{
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  width: 100vw;
+  background-color: blue;
+  margin: 0;
 }
 
-.aside {
-    background-color: aliceblue;
-    border-color: #1832c8;
-    position: sticky;
+.user-notif-background{
+  display: flex;
+  background-color: aliceblue;
+  padding: 0.2rem;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.user-image-notif{
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+.NavBarunu{
+  width: 30vw;
+  margin-inline: 12px;
+}
+
+.user-name-notif{
+  margin-inline: 12px;
+  font-weight: bold;
+}
+
+.heart-icon{
+  width: 50px;
+  height: 50px;
+}
+
+.mail-icon-notif{
+  height: 50px;
+  width: 50px;
+}
+
+.btn-outline-success{
+  display: flex;
+  height: 24px;
+  width: 24px;
+  align-items: center;
+}
+
+.aside-menu-notif{
+  list-style: none;
+}
+
+.notif-list{
+  margin-block: 0.5rem;
+}
+
+.list-anchor{
+  color: black;
+  font-weight: bold;
+}
+
+.aside-notif{
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  width:25%;
+  margin: 7.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 15px;
+}
+
+.container-card{
+  display: flex;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-
-.aside button {
-    background-color: aliceblue;
-    color: white;
-    border-color: #1832c8;
-    
-    
-    cursor: pointer;
-    font-size: 14px;
-    display: block;
-    
-}
-
-.main { 
-    justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    width: 100vw;
-}
-
-.main.button1 {
-    border-color: #1832c8;
-    border-radius: 5px;
-    color: aliceblue;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px 20px;
-    text-align: center;
-    display: inline-block;
-    margin: 4px 2px;
-    
-   }
-
-   .main.button2 {
-    border-color: #1832c8;
-    border-radius: 5px;
-    color: aliceblue;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px 20px;
-    text-align: center;
-    display: inline-block;
-    margin: 4px 2px;
-
-   }
-
-   .main.button3 {
-    border-color: #1832c8;
-    border-radius: 5px;
-    color: aliceblue;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px 20px;
-    text-align: center;
-    display: inline-block;
-    margin: 4px 2px;
-   }
-
-   .main.button-text{
+    margin: 10px;
+    text-align: left;
+    max-width: 500px;
+  max-height: 100px;
     justify-content: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-   }
 
-.footer {
-    background-color: #1832c8;
-    padding: 20px;
-    text-align: right;
-   }
+}
+.card-img{
+display:flex;
+    max-width: 15%;
+    height: 70px;
+    border-radius: 50%;
+  justify-items: left;
+}
+.card-title{
+  display:block;
+  justify-self:up;
+  order:1;
+
+  font-size: 16px;
+  flex-direction: vertical-text;
+  font-family: Arial, sans-serif;
+  margin: 1,1,1,1;
+  color: hsl(0, 0%, 2%);
+}
+.card-text{
+  display:flex;
+  justify-self:down;
+  order:2;
+  flex-direction: vertical-text;
+  font-size: 10px;
+    font-family: Arial, sans-serif;
+    color: hsl(0, 0%, 2%);
+}
