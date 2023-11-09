@@ -20,4 +20,4 @@ import CardNotif from './components/CardNotif'
       <div className="ListItem"></div>
     )
 }
-export default ListItem;
+export default {ListItem};

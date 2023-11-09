@@ -15,4 +15,4 @@ return(
  
 ) 
 }
-export default Card;
+export default {CardNotif};
