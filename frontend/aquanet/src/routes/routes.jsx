@@ -5,6 +5,7 @@ import Blog from '../layouts/Blog'
 import { ConfirmacionRegistro } from '../layouts/ConfirmacionRegistro'
 import { Registro } from '../layouts/Registro'
 import { ONGS } from '../layouts/Ongs'
+import { Notificaciones } from '../layouts/Notificaciones'
 
 const routes = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const routes = createBrowserRouter([
   {
     path:"/ongs",
     element: <ONGS/>,
+  },
+  {
+    path:"/notificaciones",
+    element:<Notificaciones/>
   }
 ])
 
