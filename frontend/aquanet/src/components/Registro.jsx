@@ -28,16 +28,6 @@ const Registro =() =>{
           <option>Empresa</option>
           <option>ONG</option>
       </select>
-      <section className='watermark-reg'>
-        <div className='watermark-reg-container'>
-          <p className='watermark-p'>
-            2023
-          </p>
-          <p className='watermark-link'>
-             AquaNet.cl
-          </p>
-        </div>
-      </section>
       <button className="register-btn">Registrar</button>
       </section>
     </div>

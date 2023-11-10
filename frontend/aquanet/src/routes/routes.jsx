@@ -3,9 +3,13 @@ import { Login } from '../layouts/Login'
 import { Profile } from '../layouts/Profile'
 import Blog from '../layouts/Blog'
 import { ConfirmacionRegistro } from '../layouts/ConfirmacionRegistro'
+<<<<<<< HEAD
 import { ONGS } from '../layouts/Ongs'
 
 import {Notificaciones} from '../layouts/Notificaciones'
+=======
+import { Registro } from '../layouts/Registro'
+>>>>>>> samuel
 const routes = createBrowserRouter([
   {
     path: "/",
@@ -24,12 +28,17 @@ const routes = createBrowserRouter([
     element: <ConfirmacionRegistro/>,
   },
   {
+<<<<<<< HEAD
     path:"/Ongs",
     element: <ONGS/>,
   },
   {
     path:"/Notificaciones2",
     element: <Notificaciones/>,
+=======
+    path:"/registro",
+    element: <Registro/>,
+>>>>>>> samuel
   },
 ])
 
