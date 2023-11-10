@@ -7,7 +7,7 @@ import { TodoList } from '../components/ongComponents/TodoList';
 import { TodoItem } from '../components/ongComponents/TodoItem';
 import { CreateTodo } from '../components/ongComponents/CreateTodo';
 
-const defaultTodos =[
+const defaultONGS =[
   {text: 'femplea', following: true},
   {text: 'femplea', following: true},
   {text: 'femplea', following: true},
@@ -30,7 +30,7 @@ function ONGS() {
       <div id='list' className='list'>
       <TodoCounter/>
         <TodoList> 
-        {defaultTodos.map(todo=>(
+        {defaultONGS.map(todo=>(
           <TodoItem key={todo.text} text={todo.text} completed ={todo.completed}/>
         ))}
         </TodoList>
