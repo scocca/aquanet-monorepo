@@ -10,7 +10,7 @@ import { PhotoBlog } from '../components/PhotoBlog';
 import { NewsInfo } from '../components/NewsInfo';
 import { LinksTitle } from '../components/LinksTitle';
 import { LinksBox } from '../components/LinksBox';
-import { Footer } from '../components/footer';
+import { Footer } from '../components/footer'
 
 const Blog = () => {
   return (
