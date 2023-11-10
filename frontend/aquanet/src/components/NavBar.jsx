@@ -10,11 +10,8 @@ function NavBar(){
           </div>
           <div className='navbar-left'>
             <ul className='left-list'>
-              <li className='list'>ONG's</li>
-              <li className='list'>Empresas</li>
-              <li className='list'>Personas</li>
-              <li className='list'>Blog</li>
-              <li className='getInTouch'>Informate</li>
+              <li className='list'> <a href="/Profile"> ONG's </a> </li>
+              <li className='getInTouch'><a href="/Blog">Infórmate</a></li>
             </ul>
           </div>
         </navbar>
