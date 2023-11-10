@@ -21,7 +21,7 @@ const Home =()=>{
                 </div>
                 <a href="/Profile"><button className="log-in-btn" >Ingresa</button></a>
             </div>
-            <p className="sign-in">no tienes cuenta... registrate aqui</p>
+            <p className="sign-in">no tienes cuenta... registrate <a href="/registro"> aqui </a></p>
             </section>
         </div>
     )

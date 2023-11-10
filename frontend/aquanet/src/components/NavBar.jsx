@@ -10,7 +10,7 @@ function NavBar(){
           </div>
           <div className='navbar-left'>
             <ul className='left-list'>
-              <li className='list'> <a href="/Profile"> ONG's </a> </li>
+              <li className='list'> <a href="/ongs"> ONG's </a> </li>
 
               <li className='getInTouch'><a href="/Blog">Infórmate</a></li>
             </ul>

@@ -38,7 +38,7 @@ const Registro =() =>{
           </p>
         </div>
       </section>
-      <button className="register-btn">Registrar</button>
+      <a href="/conreg"><button className="register-btn">Registrar</button></a>
       </section>
     </div>
   </div>
