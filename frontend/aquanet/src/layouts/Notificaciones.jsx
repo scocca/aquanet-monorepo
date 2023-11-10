@@ -16,8 +16,8 @@ function Notificaciones() {
       <ul className='list-notif-container'> 
         {data.map((item, index)=>(
           <CardNotif key={index} props={item}/>
-           ))}
-      </ul> 
+     ))}
+    </ul> 
       <FooterNotif />
     </div>
  );
