@@ -3,6 +3,7 @@ import './Login.css'
 import './Profile.css'
 import cardData from '../assets/Json/cards.json'
 import BlogData from '../assets/Json/blog.json'
+import post from '../assets/Json/posts.json'
 import { NavBar } from '../components/NavBar'
 import { Footer } from '../components/footer';
 import { FrontPhoto } from "../components/front-photo";
@@ -15,6 +16,7 @@ import { ConnectBtn } from "../components/ConnectBtn";
 import { BlogTitle } from "../components/BlogTitle";
 import { ResumePhoto } from "../components/ResumePhoto";
 import { BlogParagraph } from "../components/BlogParagraph";
+import { ProfilePost } from '../components/ProfilePost';
 import PhotoCord from '../assets/Images/foto_cordillera.png';
 import Portrait from '../assets/Images/image 30.png'
 import mailIcon from '../assets/Icons/mail_FILL0_wght400_GRAD0_opsz24 1.png'
@@ -45,6 +47,7 @@ const Profile =()=>{
                 </div>
                 <ConnectBtn/>
             </section>
+            <ProfilePost prop={post}/>
             <section className="blog">
                 <BlogTitle/>
                 <div className="blog-container">
