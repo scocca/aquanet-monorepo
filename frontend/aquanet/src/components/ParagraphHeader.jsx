@@ -4,7 +4,7 @@ const ParagraphHeader = () => {
   return (
     <div className="info-container">
         <div className="name-region">
-            <h1 className="name-region-p">Region de los Lagos</h1>
+            <h1 className="name-region-p">Región de los Lagos</h1>
         </div>
         <div>
             <div className="info-region-container">

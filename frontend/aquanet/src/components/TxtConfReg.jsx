@@ -10,7 +10,7 @@ const TxtConfReg =({logoapro})=>{
                 <p className='corr2'>Usuario574@AquaNet.cl</p> 
                 <img src = {logoapro}/>
                 </div>
-                <button className="reg-in-btn2-reg">Volver </button>
+                <a href="/"><button className="reg-in-btn2-reg">Volver </button></a>
             </div>
             </section>
         </div>

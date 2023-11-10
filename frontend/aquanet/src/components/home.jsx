@@ -19,7 +19,7 @@ const Home =()=>{
                     <p className="forgotPassword">Recuperar contraseña</p>
                 </div>
                 </div>
-                <button className="log-in-btn">Ingresa</button>
+                <a href="/Profile"><button className="log-in-btn" >Ingresa</button></a>
             </div>
             <p className="sign-in">no tienes cuenta... registrate aqui</p>
             </section>

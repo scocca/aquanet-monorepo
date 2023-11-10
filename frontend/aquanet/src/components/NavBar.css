@@ -68,4 +68,9 @@ nav{
   .navbar-right ul:hover{
     cursor: pointer;
   }
-  
+
+  /*Arianne */
+  .regiones-li {
+    display: flex;
+    flex-direction: column;
+  }
