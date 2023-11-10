@@ -1,23 +1,14 @@
-import React from 'react'
-import CardNotif from './components/CardNotif'
 
- const ListItem = (props) => {
-  const data = props.data
-  const filter = data.filter((a) => a.id ===props.id)
+import { CardNotif } from './CardNotif'
 
-
-  const listItem = data.map((item) => {
+const ListItem = ({prope}) => {
     return(
-     <Card
-       id={item.id}
-       image={item.image}
-       title={item.title}
-       text={item.text}
-       />
-      );
-    });
-    return(
-      <div className="ListItem"></div>
-    )
+    <ul className='list-notif-container'> 
+      {prope.map((item, index)=>(
+     <CardNotif key={index} props={item}/>
+     ))}
+    </ul> 
+      )
+    
 }
-export default {ListItem};
+export {ListItem};

@@ -1,10 +1,11 @@
 import './Notificacion.css';
+
+import data from '../assets/Json/notif.json'
+
 import { NavBarNotif } from '../components/NavBarNotif';
 import { FooterNotif } from '../components/FooterNotif';
 import { AsideNotif } from '../components/AsideNotif';
-import { Main } from '../components/Main';
 import { CardNotif } from '../components/CardNotif';
-import { ListItem } from '..components/ListItem';
 
 
 function Notificaciones() {
@@ -12,10 +13,11 @@ function Notificaciones() {
     <div className="notifications-container">
       <NavBarNotif/> 
       <AsideNotif/>
-    <Main>
-        <CardNotif/>
-        <ListItem/>
-    </Main>
+      <ul className='list-notif-container'> 
+        {data.map((item, index)=>(
+          <CardNotif key={index} props={item}/>
+     ))}
+    </ul> 
       <FooterNotif />
     </div>
  );
