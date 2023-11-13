@@ -1,19 +1,40 @@
-.titulo{
+body{
+    background-image:
+                      linear-gradient(180deg, #1834CE 0%, #2BAAA1 100%);
+    /* background-attachment: fixed; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-repeat: no-repeat;
+}
+
+#root{
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    background-image: url('../assets/Images/waterBackgroud.png');
+    background-size:75%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 20%;
+}
+
+
+.titulo-register{
     display: flex;
     flex-direction: column;
     color: white;
-    padding-top:5.25rem;
-    padding-bottom: 45.44rem;
     justify-content: center;
     align-items: center;
+    font-size: 0.65rem;
 
 }
-form{
+.register-container{
     display: flex;
     flex-direction:column ;
     background-color: white;
     color: #1F1F23;
-    font-family: Montserrat;
     font-size: 1.5rem;
     padding-top:2.75rem;
     padding-bottom: 5rem;
@@ -22,21 +43,32 @@ form{
     width: 27.75rem;
     height: 33.875rem;
     border-radius: 1.875rem;
+    justify-self: center;
+    margin-bottom: 8rem;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 1500;
 }
-input{
-    margin-top: 10px;
-    margin-bottom: 15px;
-    padding-top: 10px;
-    border-radius: 0.9375rem;
-    background-color: white;
-}
-select{
-    background-color: white;
-    border-radius: 0.9375rem;
-    padding-top: 10px;
 
+.register-input{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 1.5rem;
+    border-radius: 0.9375rem;
+    font-family:'Montserrat', sans-serif;
 }
-button{
+
+.register-select{
+    background-color: white;
+    border-radius: 0.9375rem;
+    font-size: 1.2rem;
+    font-family:'Montserrat', sans-serif;
+}
+.register-btn{
     margin-top: 60px;
     background-color: #1832C8;;
+    color: aliceblue;
+    border-radius: 5rem;
+    font-family:'Montserrat', sans-serif;
 }
+
