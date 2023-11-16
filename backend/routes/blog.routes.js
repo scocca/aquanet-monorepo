@@ -4,6 +4,6 @@ const routerBlog = require('express').Router();
 
 routerBlog.post('/Blog', crearRegion);
 
-routerBlog.get('/getbyid/:idblog', getUserById)
+routerBlog.get('/Blog/:region', getUserById)
 
 module.exports = routerBlog;

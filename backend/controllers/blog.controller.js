@@ -43,9 +43,9 @@ const crearRegion = async (req, res) => {
 // Buscar regiones por nombre.
 
 const getUserById = async (req, res) => {
-    const {idblog} = req.params;
+    const {region} = req.params;
 
-    if(!idblog){
+    if(!region){
         return res.status(404).json({
             msg: "Nombre de la region es requerido",
             status: 404,
@@ -54,7 +54,7 @@ const getUserById = async (req, res) => {
 
     try{
 
-    const nameRegion = await BlogSchema.findById(idblog);
+    const nameRegion = await BlogSchema.findOne({region: region});
 
     if(!nameRegion){
         return res.status(404).json({
