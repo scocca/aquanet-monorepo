@@ -9,11 +9,6 @@ const ParagraphHeader = () => {
   }
 
 
-  
-
-
-
-
   return (
     <div className="info-container">
       <div className="name-region">
