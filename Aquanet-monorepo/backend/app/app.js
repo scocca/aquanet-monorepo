@@ -29,6 +29,7 @@ app.post ("/", (req,res) => {
             }
          }else{
                 res.json("El usuario no existe")
+            
          }
         })
     })
