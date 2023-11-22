@@ -1,10 +1,12 @@
 import React from 'react'
 
-const NewsInfo = () => {
+const NewsInfo = (props) => {
+  const {titleNews, textNews} = props;
+
   return (
     <div className="blog-info-container">
-        <h3 className="blog-sub-title"> Instalación de cañerías</h3>
-        <p className="blog-detail"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum labore maiores non quidem, nulla quo repellat earum asperiores totam necessitatibus maxime adipisci. Incidunt quia temporibus, quaerat ipsum reiciendis placeat. Nobis?</p>
+        <h3 className="blog-sub-title"> {titleNews} </h3>
+        <p className="blog-detail"> {textNews} </p>
     </div>
   )
 }

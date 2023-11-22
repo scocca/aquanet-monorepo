@@ -1,10 +1,10 @@
 import React from 'react'
-import mapa from '../assets/Images/mapa.png'
+import ong from '../assets/Images/ong.jpg'
 
 const Maps = () => {
   return (
     <div className="maps-container">
-        <img className="maps" src={mapa} alt='mapa'/>
+        <img className="maps" src={ong} alt='mapa'/>
     </div>
   )
 }
