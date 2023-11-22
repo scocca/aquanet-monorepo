@@ -236,8 +236,8 @@ p.enter{
   text-align: center;
   font-size: 1.25rem;
   color:aliceblue;
-  font-weight: bold;
   margin-top:1.25rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .end-container{
@@ -349,6 +349,12 @@ p.enter{
       transform: scale(0.75);
     }
 
+}
+
+.botonaqui3{
+   color: aliceblue;
+   font-size: 1.5rem;
+   font-family: 'Montserrat', sans-serif;
 }
 
 
