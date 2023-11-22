@@ -6,6 +6,7 @@ import { ConfirmacionRegistro } from '../layouts/ConfirmacionRegistro'
 import { Registro } from '../layouts/Registro'
 import { ONGS } from '../layouts/Ongs'
 import { Notificaciones } from '../layouts/Notificaciones'
+import { CargarPerfil } from '../layouts/CargarPerfil'
 
 const routes = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const routes = createBrowserRouter([
   {
     path:"/notificaciones",
     element:<Notificaciones/>
+  },
+  {
+    path:"/cargarperfil",
+    element:<CargarPerfil/>
   }
 ])
 
