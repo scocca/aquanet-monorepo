@@ -1,24 +1,41 @@
-const express = require('express');
-const nodemailApp= express();
-const nodemailer = require('nodemailer');
+  const { nodemailApp }= require('express');
+const nodemailer = require('nodemailer');   
 
-export const transporter = nodemailer.createTransport({
+ const transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
       user: "aquanet2024@gmail.com",
-      password: "dzbf zwmj mjwr ugzm",
+      password: "dzbfzwmjmjwrugzm",
     },
     host: "smtp.gmail.com",
     port: 465,
     secure: true,
   });
  
-  transporter.verify().then(() => {
+  transporter.sendConfirmacionMail({
+ 
+    from: "AquaNet2024@gmail.com",
+    to: "andino32@gmail.com",
+    subject: "Confirmación de cuenta",
+    text: `
+      Hola, 
+
+      ¡Gracias por registrarte en AquaNet!
+  
+      Tu cuenta ha sido creada con éxito.Ahora puedes comenzar a usar nuestra red social.
+      Si tienes alguna pregunta, no dudes en contactarnos.
+      
+      Gracias,
+  
+      El equipo de AquaNet`,
+  });
+
+ /* transporter.verify().then(() => {
 
     console.log("Listo para enviar email");
   
   });
- 
+ */
  /* function sendMail(mailOptions) {
     
   if (mailOptions.subject.includes("Confirmación de cuenta")) {
@@ -41,7 +58,7 @@ function sendMail(mailOptions) {
   } else if (mailOptions.subject.includes("Notificación de posteo")) {
     sendPosteoMail(mailOptions);
   } else {
-  
+  console.log("no se pudo enviar el correo")
 }
 };
 

@@ -1,6 +1,6 @@
 import React from "react";
 import '../layouts/Registro.css'
-
+import EnviarCorreo from '../layouts/EnviarCorreo';
 
 const Registro =() =>{
 

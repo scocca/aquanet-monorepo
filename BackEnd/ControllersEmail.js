@@ -1,8 +1,9 @@
 import { transporter } from "./nodemailApp";
+const nodemailer = require('nodemailer');  
 
 await transporter.sendConfirmacionMail({
     from: "AquaNet2024@gmail.com",
-    to: user.useremail,
+    to: "andino32@gmail.com",
     subject: "Confirmación de cuenta",
     text: `
       Hola, ${user.name}
