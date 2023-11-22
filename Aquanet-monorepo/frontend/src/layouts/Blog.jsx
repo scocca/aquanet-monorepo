@@ -1,5 +1,4 @@
 import './Blog.css'
-import React from 'react'
 import { FrontPhoto } from '../components/front-photo'
 import PhotoCord from '../assets/Images/foto_cordillera.png';
 import { NavBar } from '../components/NavBar';
@@ -10,9 +9,46 @@ import { PhotoBlog } from '../components/PhotoBlog';
 import { NewsInfo } from '../components/NewsInfo';
 import { LinksTitle } from '../components/LinksTitle';
 import { LinksBox } from '../components/LinksBox';
-import { Footer } from '../components/footer'
+import { Footer } from '../components/footer';
+import React, { useEffect, useState } from 'react';
+
 
 const Blog = () => {
+    const [valorRegion,setvalorRegion] = useState("");
+    const [data,setData] = useState({});
+
+    const handleRegion = (e) => {
+    e.preventDefault();
+    
+    setvalorRegion(e.target.value);
+    console.log(e.target.value);
+    
+  }
+
+  useEffect(() =>{
+    const url = "http://localhost:2727/Blog/Araucania";
+    fetch(url)
+    .then((response)=> response.json())
+    .then((data)=> {setData(data.data); console.log(data)})
+    .catch((error)=> console.log(error));
+  }, [])
+
+  useEffect(()=>{
+    const url = `http://localhost:2727/Blog/${valorRegion}`;
+    console.log(url);
+    
+    fetch(url)
+    .then((response)=> response.json())
+    .then((data)=> {setData(data.data); console.log(data)})
+    .catch((error)=> console.log(error));
+
+
+    
+  },[valorRegion])
+
+
+    
+
   return (
     <>
     <main className="blog-inf">
@@ -20,15 +56,39 @@ const Blog = () => {
         <section className="blog-header">
             <FrontPhoto photo={PhotoCord}/>
         <div className="user-blog-container">
-            <PhotoLogo/>
-            <ParagraphHeader/>
+        <PhotoLogo/>
+
+        
+            
+            
+            
+            <ParagraphHeader
+            name={data.name}
+            texto={data.texto}
+            />
+
+          <form className='formBlog'>
+              <label for="opcionesRegiones" className='titleformBlog'></label>
+              <select className='opcionesRegiones' name="regiones" onChange={handleRegion}>
+                <option className='opcionesBlog' value="Araucania">Araucania</option>
+                <option className='opcionesBlog' value="Coquimbo">Coquimbo</option>
+                <option className='opcionesBlog' value="Valparaiso">Valparaíso</option>
+                <option className='opcionesBlog' value="Arica">Arica</option>
+                <option className='opcionesBlog' value="Tarapaca">Tarapaca</option>
+                <option className='opcionesBlog' value="Antofagasta">Antofagasta</option>
+              </select>
+            </form>
+          
             <Maps/>
         </div>
         </section>
         <section className="blog-news-section">
             <div className="blog-container">
                 <PhotoBlog/>
-                <NewsInfo/>
+                <NewsInfo
+                titleNews={data.titleNews}
+                textNews={data.textNews}
+                />
             </div>
         </section>
 

@@ -1,0 +1,18 @@
+###
+POST  http://localhost:2727/Blog HTTP/1.1
+Content-Type: application/json
+
+{
+    "region": "Antofagasta",
+    "imgHeader":"https://png.pngtree.com/thumb_back/fw800/background/20221120/pngtree-arica-seaport-panorama-panorama-scene-trade-photo-image_688337.jpg",
+    "logo" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPKMl5vLjkCir9HMv1C7ZKmUJwPwiqbpG9Tg&usqp=CAU",
+    "name" : "Región de Antofagasta.",
+    "texto" : "Un estudio realizado por la Universidad de Chile reveló que la calidad del agua potable para Antofagasta se encontró entre los márgenes aceptables de la normativa chilena y no presentó significativas diferencias a partir de los distintos tipos de agua., ya que cumple la normativa a grandes rasgos y presenta una cantidad menor de incumplimientos, pero presenta deficiencias en cuanto a los parámetros organolépticos (olor, sabor, color).",
+    "imgNews": "https://www.elmorrocotudo.cl/sites/elmorrocotudo.cl/files/imagecache/380x285/imagen_noticia/que_tal_futura_desaladora_de_agua_de_mar_para_arica_dio_su_primer_gran_paso.jpg",
+    "titleNews": "Aguas Antofagasta continúa renovación de redes de agua potable en sector sur de la capital regional",
+    "textNews":"Como parte de la ejecución del Plan de Desarrollo anual de Aguas Antofagasta GrupoEPM, que busca la continua mejora del servicio que entrega a sus clientes, la sanitaria informa el inicio de dos obras de reposición de redes que contemplan un total de 300 metros de ductos de agua potable en el sector sur de la capital regional. El proyecto implica una inversión de $130 millones y los sectores a intervenir son calle Mehuín entre Avenida Argentina y Mar del Plata, además de Mar del Plata entre Mehuín y Picalhue. Las obras se extenderán desde el lunes 03 de julio hasta el 12 de septiembre."
+}
+
+###
+GET http://localhost:2727/Blog/Arica HTTP/1.1
+Content-Type: application/json

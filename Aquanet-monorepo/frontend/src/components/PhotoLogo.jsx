@@ -1,10 +1,11 @@
 import React from 'react'
-import photologo from '../assets/Images/photologo.png'
+import chile from '../assets/Images/chile.jpg'
+
 
 const PhotoLogo = () => {
   return (
     <div className="photo-logo">
-        <img className="photo-logo-img" src={photologo} alt='photologo'/>
+        <img className="photo-logo-img" src={chile} alt='photologo'/>
     </div>
   )
 }
