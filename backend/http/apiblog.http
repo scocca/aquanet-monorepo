@@ -3,14 +3,14 @@ POST  http://localhost:2727/Blog HTTP/1.1
 Content-Type: application/json
 
 {
-    "region":"Valparaiso",
-    "imgHeader":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGuW_FNaXLKrNTtkfouYUs8KVS1Wh5KreokQ&usqp=CAU",
-    "logo" : "https://th.bing.com/th/id/R.7f8dddfe517c76eead8526f9dde8289e?rik=K87GZXsYaWiyyA&riu=http%3a%2f%2fwww.biometrikalatam.com%2fwebsite%2fwp-content%2fuploads%2f2019%2f11%2flogo-gobierno-valpo.png&ehk=fBijvz56muqQe1NNcd4TZW47tNlUpJq1gOq9yu4UjN0%3d&risl=&pid=ImgRaw&r=0",
-    "name" : "Región de Valparaiso",
-    "texto" : "La situación actual del suministro de agua potable en la región de Valparaíso es crítica debido a la peor sequía de su historia.  Según el último informe hídrico entregado por Esval, la región mostró un 75% de déficit en las lluvias y cerca del 100% de nieve acumulada. El embalse Peñuelas, que hace años fue la principal reserva de agua de la comuna puerto, hoy está prácticamente seco, reducido a una pequeña laguna.  En lo que va del presente año han caído 70 milímetros de agua en Valparaíso con un déficit del 70%. ",
-    "imgNews" : "https://www.reporteminero.cl/files/650ab12126725_890x533.jpg",
-    "titleNews" : "Proyecto de Valparaíso investigará el uso de hidrógeno verde en el tratamiento de aguas subterránea",
-    "textNews": "La contaminación del agua con nitratos se ha convertido en un problema grave en varias regiones de Chile, especialmente en las zonas de Valparaíso y Metropolitana. Sin embargo, un proyecto de investigación Fondef I+D busca cambiar esta realidad, utilizando una tecnología amigable con el medio ambiente, que promete optimizar el consumo de agua para la población. El proyecto Fondef I+D y su impacto en la gestión hídrica Liderado por Javiera Toledo de la Universidad Adolfo Ibáñez y David Jeison de la Pontificia Universidad Católica de Valparaíso, este innovador proyecto se concentra en el desarrollo de una tecnología que trata las aguas contaminadas con nitratos. Además, lo hace mediante un sistema modular que utiliza hidrógeno verde, garantizando una solución ecológica."
+    "region": "Antofagasta",
+    "imgHeader":"https://png.pngtree.com/thumb_back/fw800/background/20221120/pngtree-arica-seaport-panorama-panorama-scene-trade-photo-image_688337.jpg",
+    "logo" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPKMl5vLjkCir9HMv1C7ZKmUJwPwiqbpG9Tg&usqp=CAU",
+    "name" : "Región de Antofagasta.",
+    "texto" : "Un estudio realizado por la Universidad de Chile reveló que la calidad del agua potable para Antofagasta se encontró entre los márgenes aceptables de la normativa chilena y no presentó significativas diferencias a partir de los distintos tipos de agua., ya que cumple la normativa a grandes rasgos y presenta una cantidad menor de incumplimientos, pero presenta deficiencias en cuanto a los parámetros organolépticos (olor, sabor, color).",
+    "imgNews": "https://www.elmorrocotudo.cl/sites/elmorrocotudo.cl/files/imagecache/380x285/imagen_noticia/que_tal_futura_desaladora_de_agua_de_mar_para_arica_dio_su_primer_gran_paso.jpg",
+    "titleNews": "Aguas Antofagasta continúa renovación de redes de agua potable en sector sur de la capital regional",
+    "textNews":"Como parte de la ejecución del Plan de Desarrollo anual de Aguas Antofagasta GrupoEPM, que busca la continua mejora del servicio que entrega a sus clientes, la sanitaria informa el inicio de dos obras de reposición de redes que contemplan un total de 300 metros de ductos de agua potable en el sector sur de la capital regional. El proyecto implica una inversión de $130 millones y los sectores a intervenir son calle Mehuín entre Avenida Argentina y Mar del Plata, además de Mar del Plata entre Mehuín y Picalhue. Las obras se extenderán desde el lunes 03 de julio hasta el 12 de septiembre."
 }
 
 ###

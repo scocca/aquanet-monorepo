@@ -12,6 +12,7 @@ import { LinksBox } from '../components/LinksBox';
 import { Footer } from '../components/footer';
 import React, { useEffect, useState } from 'react';
 
+
 const Blog = () => {
     const [valorRegion,setvalorRegion] = useState("");
     const [data,setData] = useState({});
@@ -73,6 +74,8 @@ const Blog = () => {
                 <option className='opcionesBlog' value="Coquimbo">Coquimbo</option>
                 <option className='opcionesBlog' value="Valparaiso">Valparaíso</option>
                 <option className='opcionesBlog' value="Arica">Arica</option>
+                <option className='opcionesBlog' value="Tarapaca">Tarapaca</option>
+                <option className='opcionesBlog' value="Antofagasta">Antofagasta</option>
               </select>
             </form>
           
