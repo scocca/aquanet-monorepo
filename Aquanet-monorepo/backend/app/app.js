@@ -8,13 +8,14 @@ const router = require('../routes/blog.routes');
 
 const app = express();
 app.use(cors());
+app.use(express.json())
 
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-app.use("/api/v1", router);
-app.use('*', (req, res)=> res.status(404).send("404- Ruta no encontrada"));
+//app.use("/api/v1", router);
+//app.use('*', (req, res)=> res.status(404).send("404- Ruta no encontrada"));
 
 app.post ("/", (req,res) => {
     const {userName,password} = req.body
