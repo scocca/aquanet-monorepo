@@ -110,7 +110,16 @@ const getOngById= async (req,res)=>{
             msg:"ONG encontrada con exito",
             data:{
                 id:ong._id,
-                name: ong.profileName
+                profileName:ong.profileName,
+                profileDescription:ong.profileDescription,
+                profileMail:ong.profileMail,
+                profilePhone:ong.profilePhone,
+                profileWeb:ong.profileWeb,
+                profileProyect1:ong.profileProyect1,
+                profileProyect2:ong.profileProyect2,
+                profileProyect3:ong.profileProyect3,
+                profileBlog:ong.profileBlog,
+                profileBlogDescription:ong.profileBlogDescription,
             },
             status:200,
         });
