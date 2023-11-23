@@ -63,28 +63,28 @@ app.post('/upload-profile-photo', upload.single('profile-photo-load'), async(req
     console.log(req.file);
     const image = req.file
     console.log(image.path)
-    res.send('done');
+    res.send(image.path);
 });
 
 app.post('/upload-portrait-photo', upload.single('profile-portrait-load'), async(req, res) => {
     console.log(req.file);
     const image = req.file
     console.log(image.path)
-    res.send('done');
+    res.send(image.path);
 });
 
 app.post('/upload-proyect1-photo', upload.single('profile-proyect1-load'), async(req, res) => {
     console.log(req.file);
     const image = req.file
     console.log(image.path)
-    res.send('done');
+    res.send(image.path);
 });
 
 app.post('/upload-proyect2-photo', upload.single('profile-proyect2-load'), async(req, res) => {
     console.log(req.file);
     const image = req.file
     console.log(image.path)
-    res.send('done');
+    res.send(image.path);
 });
 
 app.post('/upload-proyect3-photo', upload.single('profile-proyect3-load'), async(req, res) => {

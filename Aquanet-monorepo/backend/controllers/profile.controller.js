@@ -53,23 +53,29 @@ const getOngByName= async (req,res)=>{
     };
 
     try{
-        const ong = await Profile.findOne({profileName:nameong});
+        const ong = await Profile.find({profileName:nameong});
+        const finded = ong.map((profile)=>{
+            return{
+                id:profile._id,
+                name:profile.profileName
+            }
+        })
 
         if(!ong){
             return res.status(404).json({
                 msg:"Ong no encontrada",
+
                 status:404
             });
         };
 
         res.status(200).json({
             msg:"ONG encontrada con exito",
-            data:{
-                id:ong._id,
-                name: ong.profileName
-            },
+            ongs:finded,
             status:200,
         });
+
+
     }catch(error){
         console.log(error);
         res.status(500).json({
@@ -185,16 +191,16 @@ const getOngs=async (req,res)=>{
         const profiles = await Profile.find();
         const ongData=profiles.map((profile)=>{
             return{
-                idong:profile._id,
-                ongName:profile.profileName
+                id:profile._id,
+                name:profile.profileName
             };
         });
 
         res.status(200).json({
             msg:'ONGs encontradas',
-            data:{
-                ongs:ongData
-            },
+            
+             ongs:ongData,
+            
             status:200,
         });
     }catch(error){
