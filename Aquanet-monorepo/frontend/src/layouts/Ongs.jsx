@@ -1,37 +1,54 @@
 import React from 'react';
 import './ongs.css'
-
+import { useState, useEffect } from 'react';
 import { TodoCounter } from '../components/ongComponents/TodoCounter';
 import { TodoSearch } from '../components/ongComponents/TodoSearch';
 import { TodoList } from '../components/ongComponents/TodoList';
 import { TodoItem } from '../components/ongComponents/TodoItem';
 import { CreateTodo } from '../components/ongComponents/CreateTodo';
 
-const defaultONGS =[
-  {text: 'femplea', following: true},
-  {text: 'femplea', following: true},
-  {text: 'femplea', following: true},
-  {text: 'femplea', following: true},
-  {text: 'femplea', following: true},
-  {text: 'femplea', following: true},
-  {text: 'femplea', following: true},
-  {text: 'femplea', following: true}
-]
 
 function ONGS() {
+  const [completeList, setList] = useState([])
+  const [search, setSearch] = useState([])
+  const [finded, setFinded] = useState([])
+
+  useEffect(()=>{
+    fetch("http://localhost:2727/api/v1/all-ong")
+    .then((data)=>data.json())
+    .then((data)=>setList(data.ongs))
+  },[])
+  console.log(completeList)
+
+  const handleSubmit =(e)=>{
+    e.preventDefault()
+    setSearch(e.target.value)
+  }
+
+  useEffect(()=>{
+    fetch(`http://localhost:2727/api/v1/ong-by-name/${search}`)
+    .then((data)=>data.json())
+    .then((data)=>setFinded(data.ongs))
+  },[search])
+
   return (
     <React.Fragment>
     <section className='ongs-container-nodiv'>
       <div id='create' className='create'>
         <CreateTodo/>
-        <TodoSearch/>
+        <input placeholder="Busqueda de ONG's" id="search" onChange={(e) => setSearch(e.target.value)} onSubmit={handleSubmit}></input> 
+        <TodoList> 
+        {finded.map(o=>(
+          <TodoItem key={o.id} text={o.name} id={o.id}/>
+        ))}
+        </TodoList>
       </div>
 
       <div id='list' className='list'>
       <TodoCounter/>
         <TodoList> 
-        {defaultONGS.map(todo=>(
-          <TodoItem key={todo.text} text={todo.text} completed ={todo.completed}/>
+        {completeList.map(o=>(
+          <TodoItem key={o.id} text={o.name} id={o.id}/>
         ))}
         </TodoList>
         </div>
