@@ -1,0 +1,73 @@
+body{
+    background-image:
+                      linear-gradient(180deg, #1834CE 0%, #2BAAA1 100%);
+    /* background-attachment: fixed; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-repeat: no-repeat;
+}
+
+#root{
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    background-image: url('../assets/Images/waterBackgroud.png');
+    background-size:75%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 20%;
+}
+
+
+.titulo-register{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.65rem;
+
+}
+.register-container{
+    display: flex;
+    flex-direction:column ;
+    background-color: white;
+    color: #1F1F23;
+    font-size: 1.5rem;
+    padding-top:2.75rem;
+    padding-bottom: 5rem;
+    padding-left: 3.62rem;
+    padding-right: 3.62rem;
+    width: 27.75rem;
+    height: 33.875rem;
+    border-radius: 1.875rem;
+    justify-self: center;
+    margin-bottom: 8rem;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 1500;
+}
+
+.register-input{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 1.5rem;
+    border-radius: 0.9375rem;
+    font-family:'Montserrat', sans-serif;
+}
+
+.register-select{
+    background-color: white;
+    border-radius: 0.9375rem;
+    font-size: 1.2rem;
+    font-family:'Montserrat', sans-serif;
+}
+.register-btn{
+    margin-top: 60px;
+    background-color: #1832C8;;
+    color: aliceblue;
+    border-radius: 5rem;
+    font-family:'Montserrat', sans-serif;
+}
