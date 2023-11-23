@@ -10,6 +10,7 @@ const Home =()=>{
   const [password,setPassword] = useState()
   const navigate = useNavigate()
 
+axios.defaults.withCredentials = true;
 const handleSubmit = (e) => {
    e.preventDefault()
    axios.post ('http://localhost:3132/',{userName,password})
@@ -17,6 +18,9 @@ const handleSubmit = (e) => {
         console.log(result)
         if(result.data === "Login correcto"){
            navigate('/profile')
+        }else{
+            window.alert('Usuario o contraseña incorrectos!');
+
         }
   })
   
@@ -39,9 +43,9 @@ const handleSubmit = (e) => {
                 <p className='enter'>Ingresa</p>
                 <input className="username"  placeholder="Nombre de Usuario" onChange={(e) => setUserName(e.target.value)}/>
                 <input className="password" type="password" placeholder="Contraseña" onChange={(e) => setPassword(e.target.value)} />
-                <div className="forgot-pass">
+                {/* <div className="forgot-pass">
                     <p className="forgotPassword">Recuperar contraseña</p>
-                </div>
+                </div> */}
                 </div>
                 <a><button className="log-in-btn" >Ingresa</button></a>
             </div>

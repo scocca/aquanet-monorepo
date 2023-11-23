@@ -25,8 +25,23 @@ import webIcon from '../assets/Icons/public_FILL0_wght400_GRAD0_opsz24 1.svg'
 import settingIcon from '../assets/Icons/settings_FILL0_wght400_GRAD0_opsz24 1.png'
 
 import bigImage from '../assets/Images/Rectangle 14474.png'
+import React,{ useEffect } from 'react'
+import axios from 'axios'
+import { useNavigate } from "react-router-dom";
+
 
 const Profile =()=>{
+    const navigate = useNavigate()
+    axios.defaults.withCredentials = true;
+    useEffect(()=> {
+        axios.get ('http://localhost:3132/profile')
+        .then(result=> {console.log(result)
+            if(result.data !== "Login correcto"){
+                navigate('/')
+            }
+       })
+       .catch(err=> console.log('err'))
+    },[])
     return (
         <>
             <NavBar/>
