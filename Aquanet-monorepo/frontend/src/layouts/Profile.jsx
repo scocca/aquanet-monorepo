@@ -31,7 +31,7 @@ const Profile =()=>{
     const [data,setData] = useState({});
 
     useEffect(() =>{
-        const url = "http://localhost:2727/api/v1/ong-by-id/655eca617a4af3d714f92629";
+        const url = "http://localhost:2727/api/v1/ong-by-id/655f10efb5e172366c1f30c9";
         fetch(url)
         .then((response)=> response.json())
         .then((data)=> {setData(data.data); console.log(data)})
