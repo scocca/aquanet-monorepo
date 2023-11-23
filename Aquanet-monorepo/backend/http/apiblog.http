@@ -1,9 +1,9 @@
 ###
-POST  http://localhost:3132/api/v1Blog HTTP/1.1
+POST  http://localhost:3132/api/v1/Blog HTTP/1.1
 Content-Type: application/json
 
 {
-    "region": "Antofagasta",
+    "region": "Ari",
     "imgHeader":"https://png.pngtree.com/thumb_back/fw800/background/20221120/pngtree-arica-seaport-panorama-panorama-scene-trade-photo-image_688337.jpg",
     "logo" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPKMl5vLjkCir9HMv1C7ZKmUJwPwiqbpG9Tg&usqp=CAU",
     "name" : "Región de Antofagasta.",
@@ -14,5 +14,5 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3132/api/v1/Arica HTTP/1.1
+GET http://localhost:3132/api/v1/Araucania HTTP/1.1
 Content-Type: application/json
