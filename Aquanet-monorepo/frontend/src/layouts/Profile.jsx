@@ -31,7 +31,7 @@ const Profile =()=>{
     const [data,setData] = useState({});
 
     useEffect(() =>{
-        const url = "http://localhost:2727/api/v1/ong-by-id/655f10efb5e172366c1f30c9";
+        const url = "http://localhost:2727/api/v1/ong-by-id/655f4d7261adf6fad01630f9";
         fetch(url)
         .then((response)=> response.json())
         .then((data)=> {setData(data.data); console.log(data)})
@@ -46,7 +46,7 @@ const Profile =()=>{
             <section className="header">
                 <FrontPhoto photo={PhotoCord}/>
                 <div className="profile-container-info">
-                <RoundPhoto photo={data.profilePhoto}/>
+                <RoundPhoto photo={Portrait}/>
                 <ProfileParagraph userName={data.profileName} description={data.profileDescription} settingIcon={settingIcon}/>
                 <GetInTouch mail={data.profileMail} telephone={data.profilePhone} web={data.profileWeb} mailIcon={mailIcon} telIcon={telIcon} webIcon={webIcon}/>
                 </div>

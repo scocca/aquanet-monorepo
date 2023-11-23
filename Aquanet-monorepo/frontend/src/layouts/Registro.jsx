@@ -13,7 +13,7 @@ const Registro =() =>{
 
 const handleSubmit = (e) => {
    e.preventDefault()
-   axios.post ('http://localhost:3132/registro',{userName,email,password})
+   axios.post ('http://localhost:2727/registro',{userName,email,password})
    .then(result=> {console.log(result)
     navigate('/conreg')
   })

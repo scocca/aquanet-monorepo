@@ -26,7 +26,7 @@ const Blog = () => {
   }
 
   useEffect(() =>{
-    const url = "http://localhost:3132/api/v1/Blog/Araucania";
+    const url = "http://localhost:2727/api/v1/Blog/Araucania";
     fetch(url)
     .then((response)=> response.json())
     .then((data)=> {setData(data.data); console.log(data)})
@@ -34,7 +34,7 @@ const Blog = () => {
   }, [])
 
   useEffect(()=>{
-    const url = `http://localhost:3132/api/v1/Blog/${valorRegion}`;
+    const url = `http://localhost:2727/api/v1/Blog/${valorRegion}`;
     console.log(url);
     
     fetch(url)
