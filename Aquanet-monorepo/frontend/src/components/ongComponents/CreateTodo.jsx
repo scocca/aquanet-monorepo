@@ -3,7 +3,7 @@
 function CreateTodo(){
     return(
     <div id='title'>
-        Welcome to the ONGS's Board
+        Buscador de ONG's
     </div>
     )
 }

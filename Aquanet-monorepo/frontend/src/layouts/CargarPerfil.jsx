@@ -15,21 +15,31 @@ const CargarPerfil =()=>{
     const [profileProyect3,setProfileproyect3]=useState()
     const [profileBlog,setProfileBlog]=useState()
     const [profileBlogDescription, setProfileBlogDescription]=useState()
+    const [profilePhoto, setProfilePhoto] = useState();
+    const [portraitPhoto, setPortraitPhoto] = useState();
+    const [proyect1Photo, setProyect1Photo] = useState();
+    const [proyect2Photo, setProyect2Photo] = useState();
+    const [proyect3Photo, setProyect3Photo] = useState();
+    const [blogPhoto, setBlogPhoto] = useState();
+
 
     const handleSubmit =(e)=>{
         e.preventDefault()
-        axios.post('http://localhost:8054/api/v1/create-profile',{profileName,
+        axios.post('http://localhost:2727/api/v1/create-profile',{profileName,
         profileDescription,profileMail,profilePhone, profileWeb, profileProyect1,
         profileProyect2,profileProyect3,profileBlog,profileBlogDescription})
         .then(result=>{alert(result)})
-        .catch(err=>alert(err))
-    }
+        .catch(err=>alert(err));
+        // axios.post('http://localhost:2727/upload-profile-photo',{profilePhoto})
+        // .then(result=>{console.log(result)})
+        // .catch(err=>console.log(err))
 
+    }
 
     return (
         <>
-            <div className="load-profile">
-                <form onSubmit={handleSubmit}>
+            <div className="load-profile-container">
+                <form onSubmit={handleSubmit} id='form-loader-cont'>
             <section className="load-profile-section">
                 <div className='profile-data'>
                     <p className='load-profile-p'>Ingresa tu nombre</p>
@@ -56,20 +66,20 @@ const CargarPerfil =()=>{
             <div className='load-profile-photos'>
                 <div className='photo-loader-div'>
                     <p className='load-profile-p'>Carga tu foto de portada</p>
-                    <input className='profile-photo-loader' type='file' name='profile-photo-load'></input>
+                    <input className='profile-photo-loader' type='file' name='profile-photo-load' onChange={(e)=>setProfilePhoto(e.target.files[0])}></input>
                     <p className='load-profile-p'>Carga tu foto de perfil</p>
-                    <input className='profile-photo-loader' type='file' name='profile-portrait-load'></input>
-                    <p className='load-profile-p'>Carga tu foto de proyectos</p>
-                    <input className='profile-photo-loader' type='file' name='profile-proyect1-load'></input>
-                    <input className='profile-photo-loader' type='file' name='profile-proyect2-load'></input>
-                    <input className='profile-photo-loader' type='file' name='profile-proyect3-load'></input>
+                    <input className='profile-photo-loader' type='file' name='profile-portrait-load' ></input>
+                    <p className='load-profile-p'>Carga tus fotos de proyectos</p>
+                    <input className='profile-photo-loader' type='file' name='profile-proyect1-load' ></input>
+                    <input className='profile-photo-loader' type='file' name='profile-proyect2-load' ></input>
+                    <input className='profile-photo-loader' type='file' name='profile-proyect3-load' ></input>
                     <p className='load-profile-p'>Carga la foto para tu blog</p>
-                    <input className='profile-photo-loader' type='file' name='profile-blog-load'></input>
+                    <input className='profile-photo-loader' type='file' name='profile-blog-load' ></input>
                 </div>
             </div>
            
             <div className='load-profile-btncontainer'>
-                <button id='load-profile-button'>Cargar</button>
+                <button id='load-profile-button' type='submit'>Cargar</button>
             </div>
             </div>
             </form>

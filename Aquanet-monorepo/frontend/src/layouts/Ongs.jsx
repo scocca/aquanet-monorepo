@@ -14,7 +14,7 @@ function ONGS() {
   const [finded, setFinded] = useState([])
 
   useEffect(()=>{
-    fetch("http://localhost:8054/api/v1/all-ong")
+    fetch("http://localhost:2727/api/v1/all-ong")
     .then((data)=>data.json())
     .then((data)=>setList(data.ongs))
   },[])
@@ -26,7 +26,7 @@ function ONGS() {
   }
 
   useEffect(()=>{
-    fetch(`http://localhost:8054/api/v1/ong-by-name/${search}`)
+    fetch(`http://localhost:2727/api/v1/ong-by-name/${search}`)
     .then((data)=>data.json())
     .then((data)=>setFinded(data.ongs))
   },[search])
@@ -39,7 +39,7 @@ function ONGS() {
         <input placeholder="Busqueda de ONG's" id="search" onChange={(e) => setSearch(e.target.value)} onSubmit={handleSubmit}></input> 
         <TodoList> 
         {finded.map(o=>(
-          <TodoItem key={o.id} text={o.name} value={o.id}/>
+          <TodoItem key={o.id} text={o.name} id={o.id}/>
         ))}
         </TodoList>
       </div>

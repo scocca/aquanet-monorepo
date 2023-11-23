@@ -61,9 +61,9 @@ app.put('/update-by-id/:id', UpdateProfileById)
 
 app.post('/upload-profile-photo', upload.single('profile-photo-load'), async(req, res) => {
     console.log(req.file);
-    const image = req.file
-    console.log(image.path)
-    res.send(image.path);
+    const image = req.file;
+    console.log(image);
+    res.send(image);
 });
 
 app.post('/upload-portrait-photo', upload.single('profile-portrait-load'), async(req, res) => {

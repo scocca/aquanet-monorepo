@@ -11,7 +11,7 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
     cloudinary,
     params: {
-        folder: 'prueba',
+        folder: 'aquanet',
         allowedFormats: ['jpeg', 'png', 'jpg'],
     }
 });
