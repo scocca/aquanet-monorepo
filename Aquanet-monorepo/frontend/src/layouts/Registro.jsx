@@ -1,25 +1,43 @@
 import React from "react";
 import '../layouts/Registro.css'
-
-
+import { useState } from "react"
+import { Link } from "react-router-dom"
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 const Registro =() =>{
+
+  const [userName,setUserName] = useState()
+  const [email,setEmail] = useState()
+  const [password,setPassword] = useState()
+  const navigate = useNavigate()
+
+const handleSubmit = (e) => {
+   e.preventDefault()
+   axios.post ('http://localhost:3132/registro',{userName,email,password})
+   .then(result=> {console.log(result)
+    navigate('/conreg')
+  })
+  
+   .catch(err=> console.log(err))
+}
 
   return (
     <div className="pag">
     <div className="titulo-register">
     <h1>Registro</h1>
+    <form onSubmit= {handleSubmit} >
     <section className="register-container">
       <p className="usuario-register">
         Nombre de usuario: </p>
-      <input className='register-input' type="text" placeholder="Nombre de ususario" />
+      <input className='register-input' type="text" placeholder="Nombre de ususario" onChange={(e) => setUserName(e.target.value)}/>
       <p className="password-register">
       Contraseña:
       </p>
-      <input className='register-input' type="text" placeholder="Contraseña"/>
+      <input className='register-input' type="password" placeholder="Contraseña" onChange={(e) => setPassword(e.target.value)}/>
       <p className="mail-register">
         Mail:
       </p>
-      <input className='register-input' type="text" placeholder="Mail"/>
+      <input className='register-input' type="email" placeholder="Mail" onChange={(e) => setEmail(e.target.value)}/>
       <p className="type-register">
       Soy:
       </p>
@@ -38,8 +56,9 @@ const Registro =() =>{
           </p>
         </div>
       </section>
-      <a href="/conreg"><button className="register-btn">Registrar</button></a>
+      <a ><button className="register-btn">Registrar</button></a>
       </section>
+      </form>
     </div>
   </div>
   )
