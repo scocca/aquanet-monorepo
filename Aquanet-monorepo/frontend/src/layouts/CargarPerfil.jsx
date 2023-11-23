@@ -28,7 +28,7 @@ const CargarPerfil =()=>{
         axios.post('http://localhost:2727/api/v1/create-profile',{profileName,
         profileDescription,profileMail,profilePhone, profileWeb, profileProyect1,
         profileProyect2,profileProyect3,profileBlog,profileBlogDescription})
-        .then(result=>{alert(result)})
+        .then(result=>{alert('Datos Cargados Correctamente')})
         .catch(err=>alert(err));
         // axios.post('http://localhost:2727/upload-profile-photo',{profilePhoto})
         // .then(result=>{console.log(result)})

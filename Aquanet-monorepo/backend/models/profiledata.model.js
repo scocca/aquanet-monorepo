@@ -13,6 +13,7 @@ const profileSchema = new Schema({
     profileProyect3:{type:String, required:true, default:"nombre aqui"},
     profileBlog:{type:String, required:true, default:"nombre aqui"},
     profileBlogDescription:{type:String, required:true, default:"nombre aqui"},
+    profilePost:{type:Array, of:String},
     portraitPhoto:{type:String, default:'https://res.cloudinary.com/dfnyutgxt/image/upload/v1700728858/aquanet/kjdc9bm6teikou0hvb4c.jpg'},
     profilePhoto:{type:String, default:'https://res.cloudinary.com/dfnyutgxt/image/upload/v1700728858/aquanet/kjdc9bm6teikou0hvb4c.jpg'},
     proyect1Photo:{type:String, default:'https://res.cloudinary.com/dfnyutgxt/image/upload/v1700728631/aquanet/d339cfxhbpvvyinbzfhv.jpg'},
