@@ -58,9 +58,9 @@ const Profile =()=>{
                 <ProjectCard title={data.profileProyect2} />
                 <ProjectCard title={data.profileProyect3} />
                 </div>
-                <ConnectBtn/>
+                {/* <ConnectBtn/> */}
             </section>
-            <ProfilePost prop={post}/>
+           {/* <ProfilePost prop={post}/> */}
             <section className="blog">
                 <BlogTitle/>
                 <div className="blog-container">
