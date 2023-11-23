@@ -39,7 +39,7 @@ function ONGS() {
         <input placeholder="Busqueda de ONG's" id="search" onChange={(e) => setSearch(e.target.value)} onSubmit={handleSubmit}></input> 
         <TodoList> 
         {finded.map(o=>(
-          <TodoItem key={o.id} text={o.name}/>
+          <TodoItem key={o.id} text={o.name} value={o.id}/>
         ))}
         </TodoList>
       </div>
@@ -48,7 +48,7 @@ function ONGS() {
       <TodoCounter/>
         <TodoList> 
         {completeList.map(o=>(
-          <TodoItem key={o.id} text={o.name}/>
+          <TodoItem key={o.id} text={o.name} id={o.id}/>
         ))}
         </TodoList>
         </div>

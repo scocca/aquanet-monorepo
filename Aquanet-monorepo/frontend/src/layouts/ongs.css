@@ -173,6 +173,10 @@
     margin: 6px !important;
     text-justify: distribute-all-lines !important;
   }
+
+  #todo-item-p-hidden{
+    display: none;
+  }
   
   .material-symbols-rounded:hover {
     cursor: pointer;
