@@ -13,6 +13,12 @@ const profileSchema = new Schema({
     profileProyect3:{type:String, required:true, default:"nombre aqui"},
     profileBlog:{type:String, required:true, default:"nombre aqui"},
     profileBlogDescription:{type:String, required:true, default:"nombre aqui"},
+    portraitPhoto:{type:String, default:''},
+    profilePhoto:{type:String, default:''},
+    proyect1Photo:{type:String, default:''},
+    proyect2Photo:{type:String, default:''},
+    proyect3Photo:{type:String, default:''},
+    blogPhoto:{type:String, default:''}
 })
 
 const Profile = mongoose.model('Profile', profileSchema);
