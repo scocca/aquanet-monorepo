@@ -5,7 +5,7 @@ const crearPerfilCompleto = async (req,res)=>{
 
     const {profileName, profileDescription, profileMail, profilePhone, profileWeb, profileProyect1,
     profileProyect2, profileProyect3, profileBlog, profileBlogDescription}=req.body
-
+        console.log('prueba1')
 
     if(!profileName||!profileDescription||!profileMail||!profilePhone||!profileWeb||!profileProyect1||
         !profileProyect2||!profileProyect3||!profileBlog||!profileBlogDescription){
