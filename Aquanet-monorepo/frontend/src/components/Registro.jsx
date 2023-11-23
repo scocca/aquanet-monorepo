@@ -23,11 +23,11 @@ const Registro =() =>{
       <p className="type-register">
       Soy:
       </p>
-      <select className="register-select" placeholder="seleccione una opcion" >
+     {/* <select className="register-select" placeholder="seleccione una opcion" >
           <option>Persona</option>
           <option>Empresa</option>
           <option>ONG</option>
-      </select>
+      </select> */}
       <button className="register-btn">Registrar</button>
       </section>
     </div>

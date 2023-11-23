@@ -26,8 +26,13 @@ import settingIcon from '../assets/Icons/settings_FILL0_wght400_GRAD0_opsz24 1.p
 import React, { useEffect, useState } from 'react';
 
 import bigImage from '../assets/Images/Rectangle 14474.png'
+import React,{ useEffect } from 'react'
+import axios from 'axios'
+import { useNavigate } from "react-router-dom";
+
 
 const Profile =()=>{
+<<<<<<< HEAD
     const [data,setData] = useState({});
 
     useEffect(() =>{
@@ -39,6 +44,19 @@ const Profile =()=>{
       }, [])
 
 
+=======
+    const navigate = useNavigate()
+    axios.defaults.withCredentials = true;
+    useEffect(()=> {
+        axios.get ('http://localhost:3132/profile')
+        .then(result=> {console.log(result)
+            if(result.data !== "Login correcto"){
+                navigate('/')
+            }
+       })
+       .catch(err=> console.log('err'))
+    },[])
+>>>>>>> samu2
     return (
         <>
             <NavBar/>

@@ -11,9 +11,21 @@ import { LinksTitle } from '../components/LinksTitle';
 import { LinksBox } from '../components/LinksBox';
 import { Footer } from '../components/footer';
 import React, { useEffect, useState } from 'react';
-
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const Blog = () => {
+  const navigate = useNavigate()
+    axios.defaults.withCredentials = true;
+    useEffect(()=> {
+        axios.get ('http://localhost:3132/profile')
+        .then(result=> {console.log(result)
+            if(result.data !== "Login correcto"){
+                navigate('/')
+            }
+       })
+       .catch(err=> console.log('err'))
+    },[])
     const [valorRegion,setvalorRegion] = useState("");
     const [data,setData] = useState({});
 

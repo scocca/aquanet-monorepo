@@ -6,9 +6,13 @@ import { TodoSearch } from '../components/ongComponents/TodoSearch';
 import { TodoList } from '../components/ongComponents/TodoList';
 import { TodoItem } from '../components/ongComponents/TodoItem';
 import { CreateTodo } from '../components/ongComponents/CreateTodo';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { useEffect } from 'react';
 
 
 function ONGS() {
+<<<<<<< HEAD
   const [completeList, setList] = useState([])
   const [search, setSearch] = useState([])
   const [finded, setFinded] = useState([])
@@ -31,6 +35,19 @@ function ONGS() {
     .then((data)=>setFinded(data.ongs))
   },[search])
 
+=======
+  const navigate = useNavigate()
+    axios.defaults.withCredentials = true;
+    useEffect(()=> {
+        axios.get ('http://localhost:3132/profile')
+        .then(result=> {console.log(result)
+            if(result.data !== "Login correcto"){
+                navigate('/')
+            }
+       })
+       .catch(err=> console.log('err'))
+    },[])
+>>>>>>> samu2
   return (
     <React.Fragment>
     <section className='ongs-container-nodiv'>

@@ -29,23 +29,24 @@ const handleSubmit = (e) => {
     <section className="register-container">
       <p className="usuario-register">
         Nombre de usuario: </p>
-      <input className='register-input' type="text" placeholder="Nombre de ususario" onChange={(e) => setUserName(e.target.value)}/>
+      <input className='register-input' type="text" placeholder="Nombre de ususario" minLength={6} maxLength={15} onChange={(e) => setUserName(e.target.value)}required/>
       <p className="password-register">
-      Contraseña:
+      Contraseña (Maximo 10 Caracteres):
       </p>
-      <input className='register-input' type="password" placeholder="Contraseña" onChange={(e) => setPassword(e.target.value)}/>
+      <input className='register-input' type="password" placeholder="Contraseña" minLength={6} maxLength={15} onChange={(e) => setPassword(e.target.value)} required />
       <p className="mail-register">
         Mail:
       </p>
-      <input className='register-input' type="email" placeholder="Mail" onChange={(e) => setEmail(e.target.value)}/>
-      <p className="type-register">
+      <input className='register-input' type="email" placeholder="Mail" minLength={6} maxLength={40} onChange={(e) => setEmail(e.target.value)} required/>
+     
+      {/* <p className="type-register">
       Soy:
-      </p>
-      <select className="register-select" placeholder="seleccione una opcion" >
+      </p> */}
+      {/* <select className="register-select" placeholder="seleccione una opcion" >
           <option>Persona</option>
           <option>Empresa</option>
           <option>ONG</option>
-      </select>
+      </select> */}
       <section className='watermark-reg'>
         <div className='watermark-reg-container'>
           <p className='watermark-p'>
